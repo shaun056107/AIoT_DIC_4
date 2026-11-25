@@ -1,35 +1,32 @@
-!Build/
-.last_cover_stats
-/META.yml
-/META.json
-/MYMETA.*
-*.o
-*.pm.tdy
-*.bs
+# LaTeX build artifacts (scoped so myplan/*.pdf reference files remain tracked)
+ICEIB paper/*.aux
+ICEIB paper/*.bbl
+ICEIB paper/*.blg
+ICEIB paper/*.fdb_latexmk
+ICEIB paper/*.fls
+ICEIB paper/*.log
+ICEIB paper/*.out
+ICEIB paper/*.pdf
+ICEIB paper/*.synctex.gz
+ICEIB paper/*.toc
 
-# Devel::Cover
-cover_db/
+# Generic LaTeX intermediates
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
 
-# Devel::NYTProf
-nytprof.out
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
 
-# Dist::Zilla
-/.build/
-
-# Module::Build
-_build/
-Build
-Build.bat
-
-# Module::Install
-inc/
-
-# ExtUtils::MakeMaker
-/blib/
-/_eumm/
-/*.gz
-/Makefile
-/Makefile.old
-/MANIFEST.bak
-/pm_to_blib
-/*.zip
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
